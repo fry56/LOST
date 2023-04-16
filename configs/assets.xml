@@ -1,0 +1,53 @@
+<assets_list>
+    <asset>assets/font/inter.woff2</asset>
+
+    <asset>assets/sound/survivor/bandage.ogg</asset>
+    <asset>assets/sound/survivor/craft.ogg</asset>
+    <asset>assets/sound/survivor/footstep.ogg</asset>
+    <asset>assets/sound/survivor/equip.ogg</asset>
+    <asset>assets/sound/survivor/grab.ogg</asset>
+    <asset>assets/sound/survivor/hurt_1.ogg</asset>
+    <asset>assets/sound/survivor/hurt_2.ogg</asset>
+    <asset>assets/sound/survivor/hurt_3.ogg</asset>
+
+    <asset>assets/sprites/items/ammos/ammo_handgun.png</asset>
+    <asset>assets/sprites/items/ammos/ammo_rifle.png</asset>
+    <asset>assets/sprites/items/ammos/ammo_shotgun.png</asset>
+    <asset>assets/sprites/items/weapons/weapon_ak47.png</asset>
+    <asset>assets/sprites/items/weapons/weapon_glock_19.png</asset>
+    <asset>assets/sprites/items/weapons/weapon_knife.png</asset>
+    <asset>assets/sprites/items/weapons/weapon_maveric.png</asset>
+
+    <asset>assets/sprites/characters/survivor/handgun/survivor-idle_handgun.png</asset>
+    <asset>assets/sprites/characters/survivor/handgun/survivor-melee_handgun.png</asset>
+    <asset>assets/sprites/characters/survivor/handgun/survivor-move_handgun.png</asset>
+    <asset>assets/sprites/characters/survivor/handgun/survivor-reload_handgun.png</asset>
+    <asset>assets/sprites/characters/survivor/handgun/survivor-shoot_handgun.png</asset>
+    <asset>assets/sound/weapons/handgun/handgun_empty.ogg</asset>
+    <asset>assets/sound/weapons/handgun/handgun_reload.ogg</asset>
+    <asset>assets/sound/weapons/handgun/handgun_shoot.ogg</asset>
+
+    <asset>assets/sprites/characters/survivor/knife/survivor-idle_knife.png</asset>
+    <asset>assets/sprites/characters/survivor/knife/survivor-melee_knife.png</asset>
+    <asset>assets/sprites/characters/survivor/knife/survivor-move_knife.png</asset>
+    <asset>assets/sound/weapons/knife/knife_shoot.ogg</asset>
+
+    <asset>assets/sprites/characters/survivor/rifle/survivor-idle_rifle.png</asset>
+    <asset>assets/sprites/characters/survivor/rifle/survivor-melee_rifle.png</asset>
+    <asset>assets/sprites/characters/survivor/rifle/survivor-move_rifle.png</asset>
+    <asset>assets/sprites/characters/survivor/rifle/survivor-reload_rifle.png</asset>
+    <asset>assets/sprites/characters/survivor/rifle/survivor-shoot_rifle.png</asset>
+    <asset>assets/sound/weapons/rifle/rifle_empty.ogg</asset>
+    <asset>assets/sound/weapons/rifle/rifle_reload.ogg</asset>
+    <asset>assets/sound/weapons/rifle/rifle_shoot.ogg</asset>
+    <asset>assets/sound/weapons/rifle/rifle_shoot_end.ogg</asset>
+
+    <asset>assets/sprites/characters/survivor/shotgun/survivor-idle_shotgun.png</asset>
+    <asset>assets/sprites/characters/survivor/shotgun/survivor-melee_shotgun.png</asset>
+    <asset>assets/sprites/characters/survivor/shotgun/survivor-move_shotgun.png</asset>
+    <asset>assets/sprites/characters/survivor/shotgun/survivor-reload_shotgun.png</asset>
+    <asset>assets/sprites/characters/survivor/shotgun/survivor-shoot_shotgun.png</asset>
+    <asset>assets/sound/weapons/shotgun/shotgun_empty.ogg</asset>
+    <asset>assets/sound/weapons/shotgun/shotgun_reload.ogg</asset>
+    <asset>assets/sound/weapons/shotgun/shotgun_shoot.ogg</asset>
+</assets_list>
