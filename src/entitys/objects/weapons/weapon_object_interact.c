@@ -47,6 +47,7 @@ static void add_weapon_ammos(weapon_object_s *weapon, sprite *sprite_datas,
         weapon_mgr->weapons[weapon->type].ammos += free_ammos_slot;
         weapon_obj->loaded_ammos -= free_ammos_slot;
     }
+    weapon_hud_update(sprite_datas->host, survivor_datas);
     sound_manager_play_sound(survivor_datas->sound_mgr, "sound_survivor_grab");
 }
 

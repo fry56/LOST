@@ -59,6 +59,14 @@
             true
         },
         {
+            "sound_survivor_death",
+            "assets/sound/survivor/death.ogg",
+            250,
+            100,
+            false,
+            true
+        },
+        {
             "sound_survivor_hurt_2",
             "assets/sound/survivor/hurt_2.ogg",
             250,

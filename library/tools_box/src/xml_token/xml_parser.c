@@ -33,10 +33,8 @@ bool t_xml_token_parser(t_xml *doc, char *buf)
             current = current->parent;
             continue;
         }
-        if (valide_end == 0) {
-            tprintf("Invalide end : %s\n", buf + index);
+        if (valide_end == 0)
             return false;
-        }
         t_xml_token_add_datas(doc, &current, &index, buf);
     }
     return true;

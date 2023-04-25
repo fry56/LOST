@@ -43,4 +43,5 @@ void weapon_reload(sprite *sprite_datas, uint64_t timestamp)
         weapon->ammos == 0)
         return;
     reload_methode(weapon, equiped, sprite_datas, timestamp);
+    weapon_hud_update(sprite_datas->host, survivor_datas);
 }

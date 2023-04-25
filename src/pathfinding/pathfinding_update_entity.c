@@ -9,11 +9,8 @@
 #include <stdio.h>
 #include <math.h>
 #include <map/map.h>
-#include <survivor/survivor.h>
-#include <zombie/zombie.h>
-#include <utils.h>
 
-static inline bool is_side_move(sfVector2f pos_a, sfVector2f pos_b)
+static bool is_side_move(sfVector2f pos_a, sfVector2f pos_b)
 {
     sfVector2u condition = {
         pos_b.x - 64 == pos_a.x || pos_b.x + 64 == pos_a.x,
@@ -69,22 +66,9 @@ void pathfinding_update_entity(pathfinding_entity_s *entity)
     tlist_clear(entity->list_path);
     tlist_add(entity->list_open, entity->nodes[entity->current->id]);
     entity->nodes[entity->current->id]->parent_node = NULL;
-
-   /* sprite *temp_sprite;
-
-    list_foreach(entity->host->host->list_sprites, node) {
-        temp_sprite = node->value;
-        if (!sprite_have_flag(temp_sprite, "path"))
-            continue;
-        sprite_destroy(temp_sprite);
-    }*/
-
     for (int i = 0; i < 400; ++i) {
         current = get_lowest_f_cost(entity);
         tlist_add(entity->list_close, current);
-       /* sprite *temp_a = new_sprite(entity->host->host, "assets/map/cercle-noir.png", 200);
-        sprite_set_pos(temp_a, current->node->pos);
-        sprite_add_flag(temp_a, "path");*/
         tlist_add(entity->list_path, current->node);
         if (current == entity->nodes[entity->target->id])
             break;

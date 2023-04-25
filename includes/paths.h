@@ -10,4 +10,5 @@
     static const char *assets_config_path UNUSED = "configs/assets.xml";
     static const char *maps_config_path UNUSED = "configs/map.xml";
     static const char *maps_assets_path UNUSED = "assets/map";
+    static const char *save_path UNUSED = "./save.data";
 #endif //rpg_path

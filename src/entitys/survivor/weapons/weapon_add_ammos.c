@@ -21,5 +21,6 @@ void weapon_add_ammos(sprite *sprite_datas, weapons_type_e type,
 
     weapon_mgr->weapons[type].ammos += amount;
     new_notification(sprite_datas->host, temp, 5);
+    weapon_hud_update(sprite_datas->host, survivor_datas);
     free(temp);
 }

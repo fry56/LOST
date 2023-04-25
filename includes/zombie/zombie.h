@@ -41,6 +41,7 @@
     void zombie_set_pos(sprite *sprite_datas, sfVector2f pos);
     void zombie_damage(sprite *sprite_datas, uint16_t amount);
     void zombie_set_trigger(sprite *sprite_datas);
+    void zombie_set_idle(sprite *sprite_datas);
 
     void zombie_load_animations(window *window_datas);
     void zombie_load_sounds(window *window_datas);
@@ -53,4 +54,6 @@
     void zombie_init_pathfinding(zombie_s *zombie_datas);
 
     void zombie_event_move(sprite *sprite_datas, sfClock *clock);
+    void zombie_event_attack(sprite *sprite_datas);
+    void zombie_attack_callback(sprite *sprite_datas);
 #endif //zombie

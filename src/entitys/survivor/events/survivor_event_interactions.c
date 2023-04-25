@@ -38,7 +38,7 @@ void survivor_event_interactions(sprite *sprite_datas, window *window_datas)
     sprite *nearest;
     uint64_t timestamp;
 
-    if (window_datas->event.key.code != sfKeyE ||
+    if (window_datas->event.key.code != sfKeyF ||
         window_datas->event.type != sfEvtKeyPressed)
         return;
     timestamp = sfClock_getElapsedTime(window_datas->global_clock).microseconds;

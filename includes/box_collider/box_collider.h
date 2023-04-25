@@ -18,8 +18,10 @@
         sprite *host;
         sfIntRect box;
         bool blocking;
+        void *datas;
         uint8_t nbr_zone;
         t_list *current_zone[4];
+        t_list *list_sprite_inside;
         t_list_node *node_current_zone[4];
         void (*on_enter)(sprite *sprite_datas, struct box_collider_t *);
         void (*on_exit)(sprite *sprite_datas, struct box_collider_t *);

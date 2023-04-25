@@ -9,9 +9,9 @@
 
 sfVector2f get_relative_mouse_pos(survivor_s *survivor_datas)
 {
-    sfView *view = survivor_datas->host->host->view;
+    sfView *view = survivor_datas->temp_datas->host->host->view;
     sfVector2f view_pos = sfView_getCenter(view);
-    sfVideoMode size = survivor_datas->host->host->host->mode;
+    sfVideoMode size = survivor_datas->temp_datas->host->host->host->mode;
 
     return (sfVector2f){
         view_pos.x - (float)(size.width / 2) + survivor_datas->mouse_pos.x,

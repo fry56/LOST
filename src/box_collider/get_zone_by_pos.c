@@ -24,7 +24,7 @@ t_list *get_zone_by_pos(box_colliders_manager_s *mgr, sfVector2f pos)
         return NULL;
     array_index = (int)(index.y * ceil((mgr->width * map_datas->t_width) / 256)
         + index.x);
-    if (array_index > ((max_pos.x / 256) * ((max_pos.y  / 256) + 64)))
+    if (array_index > ((max_pos.x / 256) * ((max_pos.y / 256) + 64)))
         return NULL;
     return mgr->list_zones[array_index];
 }

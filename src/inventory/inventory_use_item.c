@@ -11,17 +11,18 @@
 
 bool inventory_use_item(survivor_s *survivor_datas, char *item_name)
 {
-    window *window_datas = survivor_datas->host->host->host;
+    window *window_datas = survivor_datas->temp_datas->host->host->host;
     inventory_item_s *temp = inventory_get_item_by_name(
         survivor_datas->inventory_mgr, item_name);
     uint64_t timestamp =
         sfClock_getElapsedTime(window_datas->global_clock).microseconds;
-
     if (temp == NULL || timestamp <
         survivor_datas->inventory_mgr->timestamp_wait)
         return false;
     if (inventory_items_config[temp->id].use == NULL)
         return false;
     inventory_items_config[temp->id].use(survivor_datas->inventory_mgr, temp);
+    inventory_hud_update(sprite_get_by_flag(
+        survivor_datas->temp_datas->host->host, "inventory_hud"));
     return true;
 }

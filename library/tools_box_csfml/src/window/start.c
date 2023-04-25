@@ -8,24 +8,45 @@
 #include <Class/t_window.h>
 #include <Class/t_sprite.h>
 #include <Class/t_text.h>
+#include <Class/t_circle_shape.h>
+#include <Class/t_rectangle_shape.h>
 #include <stdlib.h>
+
+static void window_update_shape(window *self)
+{
+    list_foreach(((scene *)self->actual_scene->value)->list_rectangle_shapes,
+        node) {
+        if (!((rectangle_shape *)node->value)->visible)
+            continue;
+        sfRenderWindow_drawRectangleShape(self->window,
+            ((rectangle_shape *)node->value)->sf_rectangle_shape, NULL);
+    }
+    list_foreach(((scene *)self->actual_scene->value)->list_circle_shapes,
+        node) {
+        if (!((circle_shape *)node->value)->visible)
+            continue;
+        sfRenderWindow_drawCircleShape(self->window,
+            ((circle_shape *)node->value)->sf_circle_shape, NULL);
+    }
+}
 
 static void window_update_entity(window *self)
 {
     sfRenderWindow_setView(self->window,
         ((scene *)self->actual_scene->value)->view);
     list_foreach(((scene *)self->actual_scene->value)->list_sprites, node) {
-        if (!((sprite *) node->value)->visible)
+        if (!((sprite *)node->value)->visible)
             continue;
         sfRenderWindow_drawSprite(self->window
             , ((sprite *)node->value)->sf_sprite, NULL);
     }
     list_foreach(((scene *)self->actual_scene->value)->list_texts, node) {
-        if (!((text *) node->value)->visible)
+        if (!((text *)node->value)->visible)
             continue;
-        sfRenderWindow_drawText(self->window, ((text *) node->value)->sf_text,
+        sfRenderWindow_drawText(self->window, ((text *)node->value)->sf_text,
             NULL);
     }
+    window_update_shape(self);
 }
 
 static void free_garbage(window *self)

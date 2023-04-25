@@ -17,6 +17,8 @@
 
         t_list *list_sprites;
         t_list *list_texts;
+        t_list *list_circle_shapes;
+        t_list *list_rectangle_shapes;
         t_list *list_sound_manager;
         t_list *list_clock_update_functions;
         t_list *list_event_update_functions;

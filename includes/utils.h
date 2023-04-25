@@ -31,4 +31,5 @@
         bool vertically);
     pathfinding_node_s *get_pathfinding_node_by_pos(pathfinding_manager_s *mgr,
         sfVector2f pos);
+    void canva_update(scene *scene_datas, sfVector2f offset);
 #endif //rpg_utils

@@ -24,6 +24,7 @@
     <asset>assets/sprites/characters/survivor/handgun/survivor-reload_handgun.png</asset>
     <asset>assets/sprites/characters/survivor/handgun/survivor-shoot_handgun.png</asset>
     <asset>assets/sound/weapons/handgun/handgun_empty.ogg</asset>
+    <asset>assets/sound/weapons/handgun/handgun_melee.ogg</asset>
     <asset>assets/sound/weapons/handgun/handgun_reload.ogg</asset>
     <asset>assets/sound/weapons/handgun/handgun_shoot.ogg</asset>
 
@@ -50,4 +51,207 @@
     <asset>assets/sound/weapons/shotgun/shotgun_empty.ogg</asset>
     <asset>assets/sound/weapons/shotgun/shotgun_reload.ogg</asset>
     <asset>assets/sound/weapons/shotgun/shotgun_shoot.ogg</asset>
+
+    <asset>assets/sound/zombie/damage/zombie_damage_1.ogg</asset>
+    <asset>assets/sound/zombie/damage/zombie_damage_2.ogg</asset>
+    <asset>assets/sound/zombie/damage/zombie_damage_3.ogg</asset>
+    <asset>assets/sound/zombie/death/zombie_death_1.ogg</asset>
+    <asset>assets/sound/zombie/death/zombie_death_2.ogg</asset>
+    <asset>assets/sound/zombie/death/zombie_death_3.ogg</asset>
+    <asset>assets/sound/zombie/idle/zombie-idle-1.ogg</asset>
+    <asset>assets/sound/zombie/melee/zombie_melee_1.ogg</asset>
+    <asset>assets/sound/zombie/melee/zombie_melee_2.ogg</asset>
+    <asset>assets/sound/zombie/melee/zombie_melee_3.ogg</asset>
+    <asset>assets/sound/zombie/melee/zombie_melee_4.ogg</asset>
+    <asset>assets/sound/zombie/trigger/zombie_trigger_1.ogg</asset>
+    <asset>assets/sound/zombie/trigger/zombie_trigger_2.ogg</asset>
+    <asset>assets/sound/zombie/trigger/zombie_trigger_3.ogg</asset>
+    <asset>assets/sound/zombie/trigger/zombie_trigger_4.ogg</asset>
+
+    <asset>assets/sound/thelastofus_intro.ogg</asset>
+
+    <asset>assets/map/toit.png</asset>
+    <asset>assets/map/sol2.png</asset>
+    <asset>assets/map/Sol1.png</asset>
+    <asset>assets/map/Mur.png</asset>
+    <asset>assets/map/right-arrow.png</asset>
+    <asset>assets/map/points.png</asset>
+    <asset>assets/map/collider.png</asset>
+    <asset>assets/map/box_collider.png</asset>
+    <asset>assets/map/Cracks_ground/64/cracks_ground_0007_Layer-8.png</asset>
+    <asset>assets/map/Cracks_ground/64/cracks_ground_0009_Layer-10.png</asset>
+    <asset>assets/map/Cracks_ground/64/cracks_ground_0011_Layer-12.png</asset>
+    <asset>assets/map/Cracks_ground/64/cracks_ground_0012_Layer-13.png</asset>
+    <asset>assets/map/Cracks_ground/64/cracks_ground_0015_Layer-16.png</asset>
+    <asset>assets/map/Cracks_ground/64/cracks_ground_0017_Layer-18.png</asset>
+    <asset>assets/map/Cracks_ground/64/cracks_ground_0018_Layer-19.png</asset>
+    <asset>assets/map/Cracks_ground/64/cracks_ground_0028_Layer-29.png</asset>
+    <asset>assets/map/Cracks_ground/64/cracks_ground_0029_Layer-30.png</asset>
+    <asset>assets/map/Cracks_ground/64/cracks_ground_0030_Layer-31.png</asset>
+    <asset>assets/map/Cracks_ground/64/cracks_ground_0031_Layer-32.png</asset>
+    <asset>assets/map/Cracks_ground/128/cracks_ground_0003_Layer-4.png</asset>
+    <asset>assets/map/Cracks_ground/128/cracks_ground_0004_Layer-5.png</asset>
+    <asset>assets/map/Cracks_ground/128/cracks_ground_0005_Layer-6.png</asset>
+    <asset>assets/map/Cracks_ground/128/cracks_ground_0006_Layer-7.png</asset>
+    <asset>assets/map/Cracks_ground/128/cracks_ground_0008_Layer-9.png</asset>
+    <asset>assets/map/Cracks_ground/128/cracks_ground_0010_Layer-11.png</asset>
+    <asset>assets/map/Cracks_ground/128/cracks_ground_0013_Layer-14.png</asset>
+    <asset>assets/map/Cracks_ground/128/cracks_ground_0014_Layer-15.png</asset>
+    <asset>assets/map/Cracks_ground/128/cracks_ground_0016_Layer-17.png</asset>
+    <asset>assets/map/Cracks_ground/128/cracks_ground_0020_Layer-21.png</asset>
+    <asset>assets/map/Cracks_ground/128/cracks_ground_0022_Layer-23.png</asset>
+    <asset>assets/map/Cracks_ground/128/cracks_ground_0023_Layer-24.png</asset>
+    <asset>assets/map/Cracks_ground/256/cracks_ground_0000_Layer-1.png</asset>
+    <asset>assets/map/Cracks_ground/256/cracks_ground_0001_Layer-2.png</asset>
+    <asset>assets/map/Cracks_ground/256/cracks_ground_0002_Layer-3.png</asset>
+    <asset>assets/map/Cracks_ground/256/cracks_ground_0021_Layer-22.png</asset>
+    <asset>assets/map/Grass_leafs/64/grass_leafs_0000_Layer-1.png</asset>
+    <asset>assets/map/Grass_leafs/64/grass_leafs_0001_Layer-2.png</asset>
+    <asset>assets/map/Grass_leafs/64/grass_leafs_0002_Layer-3.png</asset>
+    <asset>assets/map/Grass_leafs/64/grass_leafs_0003_Layer-4.png</asset>
+    <asset>assets/map/Grass_leafs/64/grass_leafs_0004_Layer-5.png</asset>
+    <asset>assets/map/Grass_leafs/128/grass_leafs_0005_Layer-6.png</asset>
+    <asset>assets/map/Grass_leafs/128/grass_leafs_0006_Layer-7.png</asset>
+    <asset>assets/map/Grass_leafs/128/grass_leafs_0007_Layer-8.png</asset>
+    <asset>assets/map/Grass_leafs/128/grass_leafs_0008_Layer-9.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0000_Layer-1.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0001_Layer-2.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0002_Layer-3.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0003_Layer-4.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0004_Layer-5.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0005_Layer-6.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0006_Layer-7.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0007_Layer-8.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0008_Layer-9.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0009_Layer-10.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0010_Layer-11.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0011_Layer-12.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0012_Layer-13.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0013_Layer-14.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0014_Layer-15.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0015_Layer-16.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0016_Layer-17.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0017_Layer-18.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0018_Layer-19.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0019_Layer-20.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0020_Layer-21.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0021_Layer-22.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0022_Layer-23.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0023_Layer-24.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0024_Layer-25.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0025_Layer-26.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0027_Layer-28.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0028_Layer-29.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0029_Layer-30.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0030_Layer-31.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0031_Layer-32.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0032_Layer-33.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0033_Layer-34.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0034_Layer-35.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0035_Layer-36.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0036_Layer-37.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0037_Layer-38.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0038_Layer-39.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0046_Layer-47.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0047_Layer-48.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0048_Layer-49.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0049_Layer-50.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0050_Layer-51.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0051_Layer-52.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0052_Layer-53.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0053_Layer-54.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0054_Layer-55.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0055_Layer-56.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0056_Layer-57.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0057_Layer-58.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0058_Layer-59.png</asset>
+    <asset>assets/map/meuble_interieur/objects_house_0059_Layer-60.png</asset>
+    <asset>assets/map/objects/128/object_0002_cactus1.png</asset>
+    <asset>assets/map/objects/128/object_0015_rock3.png</asset>
+    <asset>assets/map/objects/128/object_0019_box.png</asset>
+    <asset>assets/map/objects/128/object_0020_box.png</asset>
+    <asset>assets/map/objects/128/object_0021_box.png</asset>
+    <asset>assets/map/objects/128/object_0022_box.png</asset>
+    <asset>assets/map/objects/512/object_0003_tree5.png</asset>
+    <asset>assets/map/objects/512/object_0004_tree4.png</asset>
+    <asset>assets/map/objects/512/object_0005_tree3.png</asset>
+    <asset>assets/map/objects/512/object_0006_tree2.png</asset>
+    <asset>assets/map/objects/512/object_0007_tree.png</asset>
+    <asset>assets/map/objects/512/object_0008_house.png</asset>
+    <asset>assets/map/objects/512/object_0009_garage.png</asset>
+    <asset>assets/map/objects/512/object_0010_car3.tsx</asset>
+    <asset>assets/map/objects/512/object_0011_car2.png</asset>
+    <asset>assets/map/objects/512/object_0012_car1.png</asset>
+    <asset>assets/map/objects/512/object_0013_column2.png</asset>
+    <asset>assets/map/objects/512/object_0014_column1.png</asset>
+    <asset>assets/map/objects/1024/object_0000_bus.png</asset>
+    <asset>assets/map/objet_ext/Helicopter.png</asset>
+    <asset>assets/map/objet_ext/objects_outside_0000_Layer-1.png</asset>
+    <asset>assets/map/objet_ext/objects_outside_0001_Layer-2.png</asset>
+    <asset>assets/map/objet_ext/objects_outside_0002_Layer-3.png</asset>
+    <asset>assets/map/objet_ext/objects_outside_0003_Layer-4.png</asset>
+    <asset>assets/map/objet_ext/objects_outside_0004_Layer-5.png</asset>
+    <asset>assets/map/objet_ext/objects_outside_0006_Layer-7.png</asset>
+    <asset>assets/map/objet_ext/objects_outside_0007_Layer-8.png</asset>
+    <asset>assets/map/objet_ext/objects_outside_0008_Layer-9.png</asset>
+    <asset>assets/map/objet_ext/objects_outside_0009_Layer-10.png</asset>
+    <asset>assets/map/objet_ext/objects_outside_0010_Layer-11.png</asset>
+    <asset>assets/map/objet_ext/objects_outside_0011_Layer-12.png</asset>
+    <asset>assets/map/objet_ext/objects_outside_0012_Layer-13.png</asset>
+    <asset>assets/map/objet_ext/objects_outside_0013_Layer-14.png</asset>
+    <asset>assets/map/objet_ext/objects_outside_0014_Layer-15.png</asset>
+    <asset>assets/map/objet_ext/objects_outside_0015_Layer-16.png</asset>
+    <asset>assets/map/objet_ext/objects_outside_0017_Layer-18(3).png</asset>
+    <asset>assets/map/objet_ext/objects_outside_0019_Layer-0.png</asset>
+    <asset>assets/map/Véhicule/Armored car/armored_car_0001_Layer-1.png</asset>
+    <asset>assets/map/Véhicule/Armored car/armored_car_0002_Layer-3.png</asset>
+    <asset>assets/map/Véhicule/Armored car/armored_car_0003_Layer-4.png</asset>
+    <asset>assets/map/Véhicule/Armored car/armored_car_0004_Layer-5.png</asset>
+    <asset>assets/map/Véhicule/comapct tank/pickup_0001_Layer-2.png</asset>
+    <asset>assets/map/Véhicule/comapct tank/pickup_0002_Layer-3.png</asset>
+    <asset>assets/map/Véhicule/comapct tank/pickup_0003_Layer-4.png</asset>
+    <asset>assets/map/Véhicule/comapct tank/pickup_0004_Layer-5.png</asset>
+    <asset>assets/map/Véhicule/Tank/tank_0009_Layer-2.png</asset>
+    <asset>assets/map/Véhicule/Tank/tank_0010_Layer-3.png</asset>
+    <asset>assets/map/Véhicule/Tank/tank_0011_Layer-4.png</asset>
+    <asset>assets/map/Véhicule/Tank/tank_0013_Layer-0.png</asset>
+    <asset>assets/map/Véhicule/Truck/pickup_0000_Layer-1.png</asset>
+    <asset>assets/map/Véhicule/Truck/pickup_0001_Layer-2(1).png</asset>
+    <asset>assets/map/Véhicule/Truck/pickup_0002_Layer-3(1).png</asset>
+    <asset>assets/map/Véhicule/Truck/pickup_0003_Layer-4(1).png</asset>
+    <asset>assets/map/Véhicule/Voiture/car_0001_Layer-2.png</asset>
+    <asset>assets/map/Véhicule/Voiture/car_0002_Layer-3.png</asset>
+    <asset>assets/map/Véhicule/Voiture/car_0003_Layer-4.png</asset>
+    <asset>assets/map/Véhicule/Voiture/car_0004_Layer-5.png</asset>
+    <asset>assets/map/Water_spots/64/water_darkspot_0000_Layer-1.png</asset>
+    <asset>assets/map/Water_spots/64/water_darkspot_0001_Layer-2.png</asset>
+    <asset>assets/map/Water_spots/64/water_darkspot_0002_Layer-3.png</asset>
+    <asset>assets/map/Water_spots/64/water_darkspot_0003_Layer-4.png</asset>
+    <asset>assets/map/Water_spots/64/water_lightspot_0001_Layer-20.png</asset>
+    <asset>assets/map/Water_spots/64/water_lightspot_0002_Layer-19.png</asset>
+    <asset>assets/map/Water_spots/64/water_lightspot_0003_Layer-18.png</asset>
+    <asset>assets/map/Water_spots/64/water_lightspot_0004_Layer-16.png</asset>
+    <asset>assets/map/Water_spots/64/water_lightspot_Layer-21.png</asset>
+    <asset>assets/map/Water_spots/128/water_darkspot_0005_Layer-6.png</asset>
+    <asset>assets/map/Water_spots/128/water_darkspot_0006_Layer-7.png</asset>
+    <asset>assets/map/Water_spots/128/water_darkspot_0007_Layer-8.png</asset>
+    <asset>assets/map/Water_spots/128/water_darkspot_0008_Layer-9.png</asset>
+    <asset>assets/map/Water_spots/128/water_darkspot_0009_Layer-10.png</asset>
+    <asset>assets/map/Water_spots/128/water_lightspot_0005_Layer-17.png</asset>
+    <asset>assets/map/Water_spots/128/water_lightspot_0006_Layer-7.png</asset>
+    <asset>assets/map/Water_spots/128/water_lightspot_0007_Layer-8.png</asset>
+    <asset>assets/map/Water_spots/128/water_lightspot_0008_Layer-9.png</asset>
+    <asset>assets/map/Water_spots/128/water_lightspot_0009_Layer-10.png</asset>
+    <asset>assets/map/Water_spots/256/water_darkspot_0010_Layer-11.png</asset>
+    <asset>assets/map/Water_spots/256/water_darkspot_0011_Layer-12.png</asset>
+    <asset>assets/map/Water_spots/256/water_darkspot_0012_Layer-13.png</asset>
+    <asset>assets/map/Water_spots/256/water_darkspot_0013_Layer-14.png</asset>
+    <asset>assets/map/Water_spots/256/water_darkspot_0014_Layer-0.png</asset>
+    <asset>assets/map/Water_spots/256/water_lightspot_0010_Layer-11.png</asset>
+    <asset>assets/map/Water_spots/256/water_lightspot_0010_Layer-11.png</asset>
+    <asset>assets/map/Water_spots/256/water_lightspot_0011_Layer-12.png</asset>
+    <asset>assets/map/Water_spots/256/water_lightspot_0012_Layer-13.png</asset>
+    <asset>assets/map/Water_spots/256/water_lightspot_0012_Layer-13.png</asset>
+    <asset>assets/map/Water_spots/256/water_lightspot_0013_Layer-14.png</asset>
+    <asset>assets/map/Water_spots/256/water_lightspot_0014_Layer-15.png</asset>
 </assets_list>

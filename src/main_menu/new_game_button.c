@@ -29,6 +29,7 @@ static void button_new_game_click(sprite *data, window *window_datas)
         return;
     default_scene_node = thashmap_get(window_datas->map_datas,
         "default_game_scene");
+    sfMusic_destroy(data->host->datas);
     animator_play_animation(animator_data, "anim_new_game_click");
     window_change_scene(window_datas, default_scene_node->value);
 }

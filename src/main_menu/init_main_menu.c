@@ -13,6 +13,9 @@
 
 void init_main_menu(scene *main_menu)
 {
+    main_menu->datas =
+        sfMusic_createFromFile("assets/sound/thelastofus_intro.ogg");
+    sfMusic_play(main_menu->datas);
     sprite *background = new_sprite(main_menu,
     "assets/sprites/main_menu/background.png", 1);
     sprite_set_pos(background, (sfVector2f){1920 / 2, 1080 / 2});

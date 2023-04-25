@@ -14,24 +14,28 @@
         {
             "Alcohol",
             "assets/sprites/items/items/item_alcohol.png",
+            item,
             10,
             NULL
         },
         {
             "Fabric",
             "assets/sprites/items/items/item_fabrics.png",
+            item,
             10,
             NULL
         },
         {
             "Medic",
             "assets/sprites/items/items/item_medikit.png",
+            object,
             3,
-            NULL
+            inventory_use_medic
         },
         {
             NULL,
             NULL,
+            item,
             0,
             NULL
         }

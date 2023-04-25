@@ -62,9 +62,11 @@
 
     void init_map(map_s *map_datas);
     void map_load(window *window_datas);
-    void ini_scene(scene *scene_datas, t_xml_node *map_node);
+    void init_scene(scene *scene_datas, t_xml_node *map_node);
     void map_load_tiled(map_s *map_datas, char *path);
     void map_load_tileset(map_s *map_datas, t_xml_node *root);
+    void init_go_to(map_s *temp, t_xml_node *node);
+    void init_npc(map_s *temp, t_xml_node *go_to_node);
 
     void init_box_coliders_manager(map_s *map_datas);
     t_list *get_zone_by_pos(box_colliders_manager_s *mgr, sfVector2f pos);
@@ -79,4 +81,5 @@
     void box_collider_destroy(box_collider_s *box_collider);
 
     void init_pathfinding_manager(map_s *map_datas);
+    void map_entity_load( map_s *temp, t_xml_node *map_node);
 #endif //map

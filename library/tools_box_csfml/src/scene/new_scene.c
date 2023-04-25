@@ -19,6 +19,8 @@ static void init_new_scene(scene *new_scene, void (*load)(struct scene *),
     new_scene->list_clock_update_functions = tlist_new();
     new_scene->list_keys = tlist_new();
     new_scene->list_texts = tlist_new();
+    new_scene->list_circle_shapes = tlist_new();
+    new_scene->list_rectangle_shapes = tlist_new();
     new_scene->view = sfView_copy(
         (sfView *)sfRenderWindow_getDefaultView(new_scene->host->window));
     new_scene->list_sound_manager = tlist_new();

@@ -84,9 +84,12 @@ void survivor_event_movements(sprite *sprite_datas, sfClock *clock UNUSED)
         survivor_datas->freeze)
         return;
     new_pos = (sfVector2f){
-        new_pos.x * 5 * scene_datas->host->deltatime * movement->offset.x,
-        new_pos.y * 5 * scene_datas->host->deltatime * movement->offset.y};
-    new_pos = get_valide_offset(survivor_datas->box_collider, new_pos);
+        new_pos.x * (survivor_datas->speed + survivor_datas->speed_level)
+            * scene_datas->host->deltatime * movement->offset.x,new_pos.y *
+        (survivor_datas->speed + survivor_datas->speed_level)
+        * scene_datas->host->deltatime * movement->offset.y};
+    new_pos = get_valide_offset(survivor_datas->temp_datas->box_collider,
+        new_pos);
     sprite_move(sprite_datas, new_pos);
     survivor_play_mov_anim(sprite_datas, movement);
 }

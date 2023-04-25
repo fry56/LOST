@@ -1,0 +1,302 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "map_sea1.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "file.lastUsedOpenFilter": "Tous les Fichiers (*)",
+    "fileStates": {
+        "Cracks_ground/128/cracks_ground_0006_Layer-7.tsx": {
+            "scaleInDock": 1
+        },
+        "Cracks_ground/256/cracks_ground_0000_Layer-1.tsx": {
+            "scaleInDock": 1
+        },
+        "Grass_leafs/128/grass_leafs_0005_Layer-6.tsx": {
+            "scaleInDock": 1
+        },
+        "Grass_leafs/128/grass_leafs_0006_Layer-7.tsx": {
+            "scaleInDock": 1
+        },
+        "Grass_leafs/128/grass_leafs_0007_Layer-8.tsx": {
+            "scaleInDock": 1
+        },
+        "Mur.tsx": {
+            "scaleInDock": 1
+        },
+        "River_map.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 3526,
+                "y": 1999
+            }
+        },
+        "Sol1.tsx": {
+            "scaleInDock": 1
+        },
+        "Véhicule/Tank/tank_0009_Layer-2.tsx": {
+            "scaleInDock": 1
+        },
+        "Véhicule/Tank/tank_0010_Layer-3.tsx": {
+            "scaleInDock": 1
+        },
+        "Véhicule/Tank/tank_0011_Layer-4.tsx": {
+            "scaleInDock": 1
+        },
+        "Véhicule/Truck/pickup_0001_Layer-2(1).tsx": {
+            "scaleInDock": 1
+        },
+        "Véhicule/Truck/pickup_0003_Layer-4(1).tsx": {
+            "scaleInDock": 1
+        },
+        "Véhicule/Voiture/car_0001_Layer-2.tsx": {
+            "scaleInDock": 1
+        },
+        "Véhicule/Voiture/car_0002_Layer-3.tsx": {
+            "scaleInDock": 1
+        },
+        "Véhicule/Voiture/car_0003_Layer-4.tsx": {
+            "scaleInDock": 1
+        },
+        "Véhicule/Voiture/car_0004_Layer-5.tsx": {
+            "scaleInDock": 1
+        },
+        "Véhicule/comapct tank/pickup_0002_Layer-3.tsx": {
+            "scaleInDock": 1
+        },
+        "Water_spots/128/water_lightspot_0007_Layer-8.tsx": {
+            "scaleInDock": 1
+        },
+        "Water_spots/256/water_lightspot_0011_Layer-12.tsx": {
+            "scaleInDock": 1
+        },
+        "Water_spots/256/water_lightspot_0012_Layer-13.tsx": {
+            "scaleInDock": 1
+        },
+        "Water_spots/256/water_lightspot_0013_Layer-14.tsx": {
+            "scaleInDock": 1
+        },
+        "Water_spots/64/water_lightspot_0004_Layer-16.tsx": {
+            "scaleInDock": 1
+        },
+        "collider.tsx": {
+            "scaleInDock": 1
+        },
+        "collider2.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "map_sea1.tmx": {
+            "scale": 0.125,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 3200,
+                "y": 3188
+            }
+        },
+        "meuble_interieur/objects_house_0000_Layer-1.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0001_Layer-2.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0002_Layer-3.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0003_Layer-4.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0004_Layer-5.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0006_Layer-7.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0008_Layer-9.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0009_Layer-10.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0013_Layer-14.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0014_Layer-15.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0017_Layer-18.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0019_Layer-20.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0021_Layer-22.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0022_Layer-23.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0023_Layer-24.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0024_Layer-25.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0025_Layer-26.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0027_Layer-28.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0028_Layer-29.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0029_Layer-30.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0031_Layer-32.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0032_Layer-33.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0033_Layer-34.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0034_Layer-35.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0035_Layer-36.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0036_Layer-37.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0037_Layer-38.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0038_Layer-39.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0046_Layer-47.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0047_Layer-48.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0048_Layer-49.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0049_Layer-50.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0050_Layer-51.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0051_Layer-52.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0052_Layer-53.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0053_Layer-54.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0055_Layer-56.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0056_Layer-57.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0057_Layer-58.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0058_Layer-59.tsx": {
+            "scaleInDock": 1
+        },
+        "meuble_interieur/objects_house_0059_Layer-60.tsx": {
+            "scaleInDock": 1
+        },
+        "objects/512/object_0003_tree5.tsx": {
+            "scaleInDock": 1
+        },
+        "objects/512/object_0004_tree4.tsx": {
+            "scaleInDock": 1
+        },
+        "objects/512/object_0005_tree3.tsx": {
+            "scaleInDock": 1
+        },
+        "objects/512/object_0007_tree.tsx": {
+            "scaleInDock": 1
+        },
+        "objects/512/object_0011_car2.tsx": {
+            "scaleInDock": 1
+        },
+        "objet_ext/Helicopter.tsx": {
+            "scaleInDock": 1
+        },
+        "objet_ext/objects_outside_0000_Layer-1.tsx": {
+            "scaleInDock": 1
+        },
+        "objet_ext/objects_outside_0001_Layer-2.tsx": {
+            "scaleInDock": 1
+        },
+        "objet_ext/objects_outside_0002_Layer-3.tsx": {
+            "scaleInDock": 1
+        },
+        "objet_ext/objects_outside_0003_Layer-4.tsx": {
+            "scaleInDock": 1
+        },
+        "objet_ext/objects_outside_0004_Layer-5.tsx": {
+            "scaleInDock": 1
+        },
+        "objet_ext/objects_outside_0006_Layer-7.tsx": {
+            "scaleInDock": 1
+        },
+        "objet_ext/objects_outside_0007_Layer-8.tsx": {
+            "scaleInDock": 1
+        },
+        "objet_ext/objects_outside_0008_Layer-9.tsx": {
+            "scaleInDock": 1
+        },
+        "objet_ext/objects_outside_0009_Layer-10.tsx": {
+            "scaleInDock": 1
+        },
+        "objet_ext/objects_outside_0010_Layer-11.tsx": {
+            "scaleInDock": 1
+        },
+        "objet_ext/objects_outside_0011_Layer-12.tsx": {
+            "scaleInDock": 1
+        },
+        "objet_ext/objects_outside_0013_Layer-14.tsx": {
+            "scaleInDock": 1
+        },
+        "objet_ext/objects_outside_0014_Layer-15.tsx": {
+            "scaleInDock": 1
+        },
+        "objet_ext/objects_outside_0015_Layer-16.tsx": {
+            "scaleInDock": 1
+        },
+        "objet_ext/objects_outside_0017_Layer-18(3).tsx": {
+            "scaleInDock": 1
+        },
+        "sol2.tsx": {
+            "scaleInDock": 1
+        }
+    },
+    "last.exportedFilePath": "D:/map",
+    "map.lastUsedExportFilter": "Tous les Fichiers (*)",
+    "openFiles": [
+        "map_sea1.tmx"
+    ],
+    "project": "sans titre.tiled-project",
+    "recentFiles": [
+        "map_sea1.tmx",
+        "River_map.tmx",
+        "collider2.tsx"
+    ]
+}

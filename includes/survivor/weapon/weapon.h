@@ -9,6 +9,7 @@
 
     #include "t_ctype.h"
     #include <SFML/Graphics.h>
+    #include <Class/t_sprite.h>
 
     #define NBR_WEAPONS_TYPES 4
 

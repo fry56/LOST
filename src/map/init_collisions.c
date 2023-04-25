@@ -8,12 +8,11 @@
 #include <map/map.h>
 #include <t_xml_token.h>
 #include <Class/t_sprite.h>
-#include <paths.h>
 #include <box_collider/box_collider.h>
 #include <box_collider/box_collider_config.h>
-#include <t_printf.h>
 #include <t_assert.h>
 #include <utils.h>
+#include <t_string.h>
 
 static void create_new_box_collider(map_s *map_datas,
     map_tileset_index_s *temp_tileset, sfVector2i pos, long id)
@@ -39,23 +38,23 @@ static void create_new_box_collider(map_s *map_datas,
 static void layer_collider_compose(map_s *map_datas, char *datas)
 {
     long id = 0;
+    size_t length = tstr_len(datas) - 1;
     sfVector2i pos = {0, 0};
     map_tileset_index_s *temp_tileset = NULL;
 
-    for (; *datas != '\0'; datas += 1) {
-        if (*datas != ',' && (*datas < '0' || *datas > '9')) {
+    for (size_t i = 1; i < length; i++) {
+        if (datas[i] == '\n' && i + 1 < length) {
             pos = (sfVector2i){0, pos.y + 1};
-            datas++;
             continue;
         }
-        if (*datas == ',') {
+        if (datas[i] == ',' || i + 1 == length) {
             tassert((temp_tileset = get_tileset(map_datas, id)) == NULL);
             create_new_box_collider(map_datas, temp_tileset, pos, id);
             id = 0;
             pos.x++;
             continue;
         }
-        id = (id * 10) + (*datas - 48);
+        id = (id * 10) + (datas[i] - 48);
     }
 }
 

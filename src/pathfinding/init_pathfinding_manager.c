@@ -17,7 +17,7 @@ void add_parent_node(pathfinding_manager_s *mgr, pathfinding_node_s *node,
     int temp_index = index - mgr->size.x - 1;
     int temp_line = (temp_index / (int)mgr->size.y);
     int default_index = index % (int)mgr->size.x;
-    for (int i = 0; i < 9; ++i, temp_index++) {
+    for (int i = 0; i < 8; ++i, temp_index++) {
         if (i == 3 || i == 6) {
             temp_index += (mgr->size.x - 3);
             temp_line++;
@@ -29,7 +29,7 @@ void add_parent_node(pathfinding_manager_s *mgr, pathfinding_node_s *node,
             temp_index % (int)mgr->size.x > default_index + 2))
             continue;
         if (default_index == (int)mgr->size.x - 1 &&
-            (i == 2 || i == 5 || i == 8))
+            (i == 2 || i == 5 || i == 7))
             continue;
         node->child_node[node->nbr_child++] = mgr->nodes[temp_index];
     }

@@ -18,6 +18,12 @@ static void clear_object(scene *temp)
     list_foreach(temp->list_texts, node)
         text_destroy(node->value);
     tlist_clear(temp->list_texts);
+    list_foreach(temp->list_circle_shapes, node)
+        text_destroy(node->value);
+    tlist_clear(temp->list_circle_shapes);
+    list_foreach(temp->list_rectangle_shapes, node)
+        text_destroy(node->value);
+    tlist_clear(temp->list_rectangle_shapes);
     tlist_free(temp->list_keys);
     tlist_clear(temp->list_event_update_functions);
     free(temp->list_event_update_functions);

@@ -27,6 +27,7 @@ static void button_quit_click(sprite *data, window *window_datas)
     if (!sprite_is_mouse_click(data, &window_datas->event))
         return;
     animator_play_animation(animator_data, "anim_quit_click");
+    sfMusic_destroy(data->host->datas);
     sfRenderWindow_close(window_datas->window);
 }
 

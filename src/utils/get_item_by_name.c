@@ -11,6 +11,8 @@
 inventory_item_config_s *get_item_by_name(char *name)
 {
     for (int i = 0; i < NBR_ITEMS; ++i) {
+        if (inventory_items_config[i].name == NULL)
+            return NULL;
         if (tstr_cmp(inventory_items_config[i].name, name) == 0)
             return &inventory_items_config[i];
     }

@@ -30,6 +30,7 @@ SRC = \
 	src/sprite/animator/add_callback.c \
 	src/sprite/animator/remove_callback.c \
 	src/sprite/animator/update.c \
+	src/sprite/animator/set_random_frame.c \
 	\
 	src/sprite/animation/new_animation.c \
 	src/sprite/animation/set_loop.c \
@@ -96,6 +97,12 @@ SRC = \
 	src/soud/manager/sound_manager_clear.c \
 	src/soud/manager/sound_manager_move.c \
 	src/soud/manager/sound_manager_set_pos.c \
+	\
+	src/shape/circle/new_circle_shape.c \
+	src/shape/circle/circle_shape_destroy.c \
+	\
+	src/shape/rectangle/new_rectangle_shape.c \
+	src/shape/rectangle/rectangle_shape_destroy.c \
 
 OBJ = $(SRC:.c=.o)
 

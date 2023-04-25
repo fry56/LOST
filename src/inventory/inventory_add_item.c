@@ -20,5 +20,7 @@ bool inventory_add_item(survivor_s *survivor_datas, char *item_name,
     if (temp->amount + amount > inventory_items_config[temp->id].max_amount)
         return false;
     temp->amount += amount;
+    inventory_hud_update(sprite_get_by_flag(
+        survivor_datas->temp_datas->host->host, "inventory_hud"));
     return true;
 }

@@ -18,16 +18,40 @@ static sfIntRect get_collider(box_collider_s *self, box_collider_s *temp)
     };
 }
 
+static void not_blocking_collider(box_collider_s *self, box_collider_s *temp,
+    sfIntRect collide)
+{
+    t_list_node *temp_node;
+
+    if (temp == self || temp->blocking)
+        return;
+    if ((temp_node = tlist_find(temp->list_sprite_inside, self->host))
+        != NULL) {
+        if ((collide.top && collide.left) && (collide.width && collide.height))
+            return;
+        tlist_remove(temp->list_sprite_inside, temp_node);
+        if (temp->on_exit != NULL)
+            temp->on_exit(self->host, temp);
+        return;
+    }
+    if (collide.top && collide.left && collide.width && collide.height) {
+        tlist_add(temp->list_sprite_inside, self->host);
+        if (temp->on_enter != NULL)
+            temp->on_enter(self->host, temp);
+    }
+}
+
 static sfVector2f get_new_offset(box_collider_s *self, box_collider_s *temp,
     sfVector2f offset, sfVector2f new_offset)
 {
-    sfIntRect collide;
     sfVector2f new_pos = (sfVector2f){self->box.left + offset.x,
         self->box.top + offset.y};
+    sfIntRect collide = get_collider(self, temp);
 
-    if (temp == self)
+    if (temp == self || !temp->blocking) {
+        not_blocking_collider(self, temp, collide);
         return new_offset;
-    collide = get_collider(self, temp);
+    }
     if (collide.top && collide.left) {
         if (new_pos.x - self->box.width < temp->box.left + temp->box.width &&
             new_pos.x + self->box.width > temp->box.left - temp->box.width &&
@@ -40,7 +64,6 @@ static sfVector2f get_new_offset(box_collider_s *self, box_collider_s *temp,
             new_offset.y = 0;
     return new_offset;
 }
-
 
 sfVector2f get_valide_offset(box_collider_s *self, sfVector2f offset)
 {

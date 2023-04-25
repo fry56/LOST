@@ -20,5 +20,7 @@ bool inventory_set_item(survivor_s *survivor_datas, char *item_name,
     if (temp->amount + amount < 0)
         return false;
     temp->amount = amount;
+    inventory_hud_update(sprite_get_by_flag(
+        survivor_datas->temp_datas->host->host, "inventory_hud"));
     return true;
 }

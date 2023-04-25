@@ -17,7 +17,7 @@ void scene_update_key(scene *self, window *window_datas)
 
     if (key == NULL)
         return;
-    key->is_press = !key->is_press;
+    key->is_press = (window_datas->event.type == sfEvtKeyPressed);
     if (key->is_press)
         key->timestamp = sfClock_getElapsedTime(window_datas->global_clock)
             .microseconds;

@@ -17,7 +17,8 @@ box_collider_s *new_box_collider(box_colliders_manager_s *mgr, sfIntRect pos,
 
     tassert(mgr == NULL);
     temp->box_colliders_mgr = mgr;
-    temp->blocking = blocking;
+    if ((temp->blocking = blocking) == false)
+        temp->list_sprite_inside = tlist_new();
     temp->nbr_zone = 0;
     temp->box = pos;
     update_zone_of_box_collider(mgr, temp);

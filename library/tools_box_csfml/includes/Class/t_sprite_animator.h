@@ -40,4 +40,5 @@
     bool animator_remove_callback(animator *self, tsize_t index);
     void animator_remove_callback_by_name(animator *self, char *animation_name);
     void update_sprite_animator(struct sprite *sprite, sfClock *clock);
+    void animator_set_random_frame(animator *self);
 #endif //t_class_sprite_animator

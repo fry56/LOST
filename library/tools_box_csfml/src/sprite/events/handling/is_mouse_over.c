@@ -21,8 +21,11 @@ static struct converted_pos_s get_pos(sprite *self)
     float x_a = ((float)size.x / (float)default_size.width);
     float y_a = ((float)size.y / (float)default_size.height);
     struct converted_pos_s datas;
+    sfVector2f center_view = sfView_getCenter(self->host->view);
 
     datas.pos = sfSprite_getPosition(self->sf_sprite);
+    datas.pos = (sfVector2f){datas.pos.x - (center_view.x - (1920 / 2)),
+        datas.pos.y - (center_view.y - (1080 / 2))};
     datas.sprite_bounds = sfSprite_getGlobalBounds(self->sf_sprite);
     datas.origin = sfSprite_getOrigin(self->sf_sprite);
     datas.scale = sfSprite_getScale(self->sf_sprite);

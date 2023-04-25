@@ -12,6 +12,22 @@
 #include <Class/t_scene.h>
 #include "t_string.h"
 
+static void init_buttons(scene *settings_menu)
+{
+    sprite *plus_sound_button = new_sprite(settings_menu,
+    "assets/sprites/main_menu/plus_button.png", 1);
+    init_plus_sound_button(plus_sound_button);
+    sprite *minus_sound_button = new_sprite(settings_menu,
+    "assets/sprites/main_menu/minus_button.png", 1);
+    init_minus_sound_button(minus_sound_button);
+    sprite *plus_music_button = new_sprite(settings_menu,
+    "assets/sprites/main_menu/plus_button.png", 1);
+    init_plus_music_button(plus_music_button);
+    sprite *minus_music_button = new_sprite(settings_menu,
+    "assets/sprites/main_menu/minus_button.png", 1);
+    init_minus_music_button(minus_music_button);
+}
+
 void init_settings_menu(scene *settings_menu)
 {
     sprite *background = new_sprite(settings_menu,
@@ -20,6 +36,19 @@ void init_settings_menu(scene *settings_menu)
     sprite *commands_button = new_sprite(settings_menu,
     "assets/sprites/main_menu/commands_button.png", 1);
     init_commands_button(commands_button);
+    sprite *button_1920x1080 = new_sprite(settings_menu,
+    "assets/sprites/main_menu/1920x1080_button.png", 1);
+    init_1920x1080_button(button_1920x1080);
+    sprite *button_1600x900 = new_sprite(settings_menu,
+    "assets/sprites/main_menu/1600x900_button.png", 1);
+    init_1600x900_button(button_1600x900);
+    sprite *button_full_screen = new_sprite(settings_menu,
+    "assets/sprites/main_menu/full_screen.png", 1);
+    init_fullscreen_button(button_full_screen);
+    sprite *button_win_screen = new_sprite(settings_menu,
+    "assets/sprites/main_menu/windowed_button.png", 1);
+    init_windowed_button(button_win_screen);
+    init_buttons(settings_menu);
 }
 
 void return_to_main_menu(UNUSED scene *data, window *window_datas)

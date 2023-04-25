@@ -41,23 +41,23 @@ static void get_image_data(sfImage *temp, map_tileset_index_s *temp_tileset,
 static void layer_image_compose(map_s *map_datas, sfImage *temp, char *datas)
 {
     long id = 0;
+    size_t length = tstr_len(datas);
     sfVector2i pos = {0, 0};
     map_tileset_index_s *temp_tileset = NULL;
 
-    for (; *datas != '\0'; datas += 1) {
-        if (*datas != ',' && (*datas < '0' || *datas > '9')) {
+    for (size_t i = 1; i < length; i++) {
+        if (datas[i] == '\n' && i + 1 < length) {
             pos = (sfVector2i){0, pos.y + 1};
-            datas++;
             continue;
         }
-        if (*datas == ',') {
+        if (datas[i] == ',' || i + 1 == length) {
             tassert((temp_tileset = get_tileset(map_datas, id)) == NULL);
             get_image_data(temp, temp_tileset, pos, id);
             id = 0;
             pos.x++;
             continue;
         }
-        id = (id * 10) + (*datas - 48);
+        id = (id * 10) + (datas[i] - 48);
     }
 }
 
@@ -78,7 +78,6 @@ static void new_map_layer(map_s *map_datas, t_xml_node *xml_layer)
     layer->sprite = new_sprite(map_datas->host, NULL, layer->id);
     sfSprite_setTexture(layer->sprite->sf_sprite, layer_texture, false);
     layer->sprite->sf_texture = layer_texture;
-    sprite_set_fixed_origin(layer->sprite, (sfVector2f) {0, 0});
     sprite_set_pos(layer->sprite, (sfVector2f) {0, 0});
     sfImage_destroy(temp);
     tlist_add(map_datas->list_layer, layer);

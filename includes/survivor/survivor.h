@@ -17,22 +17,43 @@
     #include <interaction.h>
     #include <box_collider/box_collider.h>
     #include <pathfinding/pathfinding.h>
+    #include <npc/npc.h>
+
+    typedef struct survivor_scene_datas_t {
+        sprite *host;
+        sound_mananger *sound_mgr;
+        pathfinding_node_s *pathfinding_node;
+        box_collider_s *box_collider;
+        sfVector2f spawn_pos;
+    } survivor_scene_datas_s;
+
+    typedef struct survivor_save_t {
+        int health;
+        int health_level;
+        int speed;
+        int speed_level;
+        uint32_t xp;
+    } __attribute__((packed)) survivor_save_s;
 
     typedef struct survivor_t {
-        sprite *host;
         weapons_manager_s *weapon_mgr;
         sound_mananger *sound_mgr;
         inventory_mgr_s *inventory_mgr;
         int health;
+        int health_level;
+        int speed;
+        int speed_level;
+        uint32_t xp;
         bool freeze;
-        pathfinding_node_s *pathfinding_node;
-        box_collider_s *box_collider;
+        bool death;
+        bool special_medic_fine;
         sfVector2f mouse_pos;
         sfKeyCode actual_movement;
         uint64_t timestamp_interaction;
         float angle;
+        survivor_scene_datas_s *temp_datas;
+        npc_s *npc_dialogue;
     } survivor_s;
-
 
     // SURVIVOR //
     bool survivor_init_datas(window *window_datas);
@@ -46,6 +67,7 @@
     void survivor_destroy(sprite *sprite_datas);
     void survivor_set_pos(sprite *sprite_datas, sfVector2f pos);
     void survivor_move(sprite *sprite_datas, sfVector2f pos);
+    void survivor_damage(sprite *sprite_datas, uint32_t amount);
 
     void survivor_load_sounds(window *window_datas);
     void survivor_load_animations(window *window_datas);
@@ -84,6 +106,9 @@
     sprite *new_ammos_object(scene *scene_datas, sfVector2f pos, float angle,
         weapons_type_e type);
     void ammos_object_destroy(sprite *sprite_datas);
+    sprite *weapon_hud_init(scene *scene_datas, sfVector2f pos);
+    void weapon_hud_update(scene *scene_datas, survivor_s *survivor_datas);
+    void weapon_hud_move(sprite *sprite_datas, sfVector2f pos);
 
     // INVENTORY //
     inventory_item_s *inventory_get_item_by_name(inventory_mgr_s *inventory_mgr,
@@ -97,4 +122,19 @@
         uint16_t amount);
     bool inventory_use_item(survivor_s *survivor_datas, char *item_name);
 
+    void survivor_update_map(sprite *sprite_datas);
+    void view_manager(sprite *sprite_datas);
+
+    void update_zombie_path(sprite *sprite_datas, survivor_s *survivor_datas);
+    void survivor_death_restart_game(sprite *sprite_datas, sfClock *clock);
+
+    // SAVE //
+    void survivor_save(survivor_s *survivor_data);
+    bool survivor_have_save(void);
+    void survivor_load_save(survivor_s *survivor_data);
+
+    void special_medkit_object_interact(sprite *sprite_datas,
+        interaction_s *interaction_datas);
+    sprite *new_special_medkit_object(scene *scene_datas, sfVector2f pos);
+    void special_medkit_object_destroy(sprite *sprite_datas);
 #endif

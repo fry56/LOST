@@ -24,12 +24,21 @@ void init_pause_menu(scene *pause_menu)
     sprite *quit_button = new_sprite(pause_menu,
     "assets/sprites/pause_menu/quit_pause_button.png", 1);
     init_quit_pause_button(quit_button);
+    sprite *skill_tree_button = new_sprite(pause_menu,
+        "assets/sprites/pause_menu/skills_pause_button.png", 1);
+    init_skill_tree_pause_button(skill_tree_button);
+    sprite *save_button = new_sprite(pause_menu,
+        "assets/sprites/pause_menu/save_pause_button.png", 1);
+    init_save_pause_button(save_button);
+    sprite *load_button = new_sprite(pause_menu,
+        "assets/sprites/pause_menu/load_pause_button.png", 1);
+    init_load_pause_button(load_button);
 }
 
 void go_pause_menu(UNUSED scene *data, window *window_datas)
 {
     t_hashmap_node *scene = thashmap_get(window_datas->map_datas,
-    "prev_scene");
+        "prev_scene");
     if (window_datas->event.type != sfEvtKeyPressed ||
     window_datas->event.key.code != sfKeyEscape)
         return;
@@ -39,10 +48,12 @@ void go_pause_menu(UNUSED scene *data, window *window_datas)
 
 void pause_to_game(UNUSED scene *data, window *window_datas)
 {
+    t_hashmap_node *scene = thashmap_get(window_datas->map_datas,
+        "current_game_scene");
     if (window_datas->event.type != sfEvtKeyPressed ||
-    window_datas->event.key.code != sfKeyEscape)
+        window_datas->event.key.code != sfKeyEscape)
         return;
-    window_change_scene(window_datas, "game");
+    window_change_scene(window_datas, (char *)scene->value);
 }
 
 void settings_to_pause(window *window_datas)

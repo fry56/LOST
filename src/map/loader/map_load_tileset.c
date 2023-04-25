@@ -59,7 +59,7 @@ static void get_tileset_datas(t_hashmap *tileset_map, tileset_s *tileset,
     tileset->tile_count = t_xml_get_attribute_number(tileset_d, "tilecount");
     tileset->columns = t_xml_get_attribute_number(tileset_d, "columns");
     load_tileset_texture(tileset, texture_temp);
-    tassert(thashmap_add(tileset_map, tileset->name, tileset) == NULL);
+    tassert(thashmap_add(tileset_map, path_config, tileset) == NULL);
     free(config_temp);
 }
 
@@ -93,7 +93,6 @@ void map_load_tileset(map_s *map_datas, t_xml_node *root)
             continue;
         if ((tileset_node = thashmap_get(tileset_map,
             t_xml_get_node_attribute(temp, "source"))) != NULL) {
-            tlist_add(map_datas->list_tileset, tileset_node->value);
             insert_tileset_index(map_datas, tileset_node->value, temp);
             continue;
         }

@@ -15,6 +15,8 @@ static void button_continue_hover(sprite *data, sfClock *clock UNUSED)
 {
     animator *animator_data = data->animator;
 
+    if (!survivor_have_save())
+        return;
     if (!sprite_is_mouse_over(data, &data->host->host->event))
         return;
     animator_play_animation(animator_data, "anim_continue_hover");
@@ -23,11 +25,21 @@ static void button_continue_hover(sprite *data, sfClock *clock UNUSED)
 static void button_continue_click(sprite *data, window *window_datas)
 {
     animator *animator_data = data->animator;
+    survivor_s *survivor_datas;
+    t_hashmap_node *default_scene_node;
 
     if (!sprite_is_mouse_click(data, &window_datas->event))
         return;
+    if (!survivor_have_save())
+        return;
+    sfMusic_destroy(data->host->datas);
     animator_play_animation(animator_data, "anim_continue_click");
-    window_change_scene(window_datas, "game");
+    survivor_datas = thashmap_get(
+        data->host->host->map_datas, "SURVIVOR_DATAS")->value;
+    default_scene_node = thashmap_get(window_datas->map_datas,
+        "default_game_scene");
+    survivor_load_save(survivor_datas);
+    window_change_scene(window_datas, default_scene_node->value);
 }
 
 void init_continue_button(sprite *continue_button)

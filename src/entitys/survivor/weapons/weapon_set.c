@@ -27,4 +27,5 @@ void weapon_set(sprite *sprite_datas, weapons_type_e type)
         thashmap_get(window_datas->map_datas, anim_name);
     sound_manager_play_sound(survivor_datas->sound_mgr, "sound_survivor_equip");
     weapon_mgr->timestamp_weapon_change = timestamp;
+    weapon_hud_update(sprite_datas->host, survivor_datas);
 }

@@ -37,10 +37,24 @@ SRC = 	src/main.c \
 		src/settings/settings_menu.c \
 		src/settings/settings_button.c \
 		src/settings/settings_button_pause.c \
+		src/settings/button_1920x1080.c \
+		src/settings/button_1600x900.c \
+		src/settings/full_screen.c \
+		src/settings/windowed.c \
+		src/settings/plus_sound.c \
+		src/settings/minus_sound.c \
+		src/settings/plus_music.c \
+		src/settings/minus_music.c \
 		\
 		src/pause_menu/pause.c \
 		src/pause_menu/quit_game.c \
-    \
+		src/pause_menu/skill_tree_button.c \
+		src/pause_menu/save_button.c \
+		src/pause_menu/load_button.c \
+		\
+		src/skill_tree/skill_tree_update.c \
+		src/skill_tree/skill_tree_button.c \
+    	\
 		src/entitys/survivor/init/survivor_init.c \
 		src/entitys/survivor/init/survivor_init_datas.c \
 		src/entitys/survivor/init/survivor_init_inventory_mgr.c \
@@ -51,6 +65,9 @@ SRC = 	src/main.c \
 		src/entitys/survivor/survivor_destroy.c \
 		src/entitys/survivor/survivor_move.c \
 		src/entitys/survivor/survivor_set_pos.c \
+		src/entitys/survivor/survivor_damage.c \
+		src/entitys/survivor/survivor_update_map.c \
+		src/entitys/survivor/survivor_save.c \
 		\
 		src/entitys/survivor/weapons/weapon_change.c \
 		src/entitys/survivor/weapons/weapon_reload.c \
@@ -81,8 +98,12 @@ SRC = 	src/main.c \
 		src/entitys/objects/items/item_object_interact.c \
 		src/entitys/objects/items/new_item_object.c \
 		\
-		src/notifications/notification_init.c \
-		src/notifications/new_notification.c \
+		src/hud/notifications/notification_init.c \
+		src/hud/notifications/new_notification.c \
+		\
+		src/hud/weapon/weapon_hud_init.c \
+		src/hud/weapon/weapon_hud_update.c \
+		src/hud/weapon/weapon_hud_move.c \
 		\
 		src/raycast/raycast.c \
 		src/raycast/raycast_nearest_sprite_by_flag.c \
@@ -102,6 +123,7 @@ SRC = 	src/main.c \
 		src/entitys/zombie/zombie_set_trigger.c \
 		\
 		src/entitys/zombie/events/zombie_event_move.c \
+		src/entitys/zombie/events/zombie_event_attack.c \
 		\
 		src/entitys/zombie/animator/get_zombie_anim_by_type.c \
 		\
@@ -112,6 +134,8 @@ SRC = 	src/main.c \
 		src/inventory/inventory_use_item.c \
 		src/inventory/inventory_get_item_by_name.c \
 		\
+		src/inventory/use/inventory_use_medic.c \
+		\
 		src/craft/craft_new_object.c \
 		\
 		src/particles/new_particles.c \
@@ -120,9 +144,12 @@ SRC = 	src/main.c \
 		src/map/init_map.c \
 		src/map/init_scene.c \
 		src/map/init_collisions.c \
+		src/map/init_npc.c \
 		src/map/loader/map_load_tileset.c \
 		src/map/loader/map_load.c \
 		src/map/loader/map_load_tiled.c \
+		src/map/init_go_to.c \
+		src/map/loader/map_entity_load.c \
 		\
 		src/box_collider/box_colliders_manager/init_box_colliders_manager.c\
 		\
@@ -136,6 +163,29 @@ SRC = 	src/main.c \
 		\
 		src/pathfinding/init_pathfinding_manager.c \
 		src/pathfinding/pathfinding_update_entity.c \
+		\
+		src/canva/canva_update.c \
+		\
+		src/loading_screen/init_loading_screen.c \
+		\
+		src/entitys/npc/init/npc_init.c \
+		src/entitys/npc/loader/npc_load_animations.c \
+		src/entitys/npc/events/npc_event_interactions.c \
+		src/entitys/npc/events/npc_event_next_dialogue.c \
+		\
+		src/skill_tree/init_skill_tree.c \
+		\
+		src/hud/inventory/inventory_hud_init.c \
+		src/hud/inventory/inventory_hud_move.c \
+		src/hud/inventory/inventory_hud_update.c \
+		src/hud/inventory/inventory_hud_new_object.c \
+		src/hud/inventory/inventory_add_btn_anim.c \
+		src/hud/inventory/inventory_hud_event.c \
+		src/inventory/inventory_toggle.c \
+		\
+		src/quest/init_special_medkit.c \
+		src/quest/special_medkit_object_destroy.c \
+		src/quest/special_medkit_object_interact.c \
 
 OBJ = $(SRC:.c=.o)
 

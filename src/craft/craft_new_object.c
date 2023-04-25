@@ -17,7 +17,9 @@ static bool have_any_required_item(craft_receipts_s *craft_receipts,
 {
     uint16_t item = craft_receipts->nbr_required_item;
 
-    for (int i = 0; i < NBR_ITEMS; ++i) {
+    for (int i = 0; i < NBR_ITEMS && item > 0; ++i) {
+        if (inventory_items_config[i].name == NULL)
+            continue;
         if (tstr_cmp(craft_receipts->items_require[item - 1].name,
             inventory_mgr->items[i].name))
             continue;

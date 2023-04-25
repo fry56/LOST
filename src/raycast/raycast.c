@@ -14,8 +14,8 @@ bool raycast(sfVector2f start, sfVector2f end, double angle, float clerance)
     angle = angle * (M_PI / 180);
     float temp_dist = get_distance(start, end);
     sfVector2f temp_estimated = (sfVector2f){
-            start.x + cos(angle) * temp_dist,
-            start.y + sin(angle) * temp_dist
+        start.x + cos(angle) * temp_dist,
+        start.y + sin(angle) * temp_dist
     };
 
     if (temp_estimated.x + clerance < end.x ||
